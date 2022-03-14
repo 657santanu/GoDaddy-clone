@@ -627,12 +627,17 @@ a{
        font-size:20px ;
     
     }
+	.footer11 li{
+        color: #888d8f;
+    }
     .footer11{
     margin-top: 20px;
     margin-left: 5%;
     }
     .footer h1{
         margin-left: 5%;
+	padding-bottom: 50px;
+        border-bottom:1px solid #888d8f  ;
     }
     .footer p{
        padding-left: 5%;
