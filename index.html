@@ -29,6 +29,36 @@
             <li>Sign In</li>
         </div>
     </div> -->
+     <header class="header">
+        <div class="contain">
+            <div class="row align-items-center justify-content-between">
+                <div class="logo">
+                   <a href="#"> <img src="./images/GoDaddy images.png" alt=""> </a>
+                </div>
+                <button type="button" class="nav-toggler">
+                   <span></span>
+                </button>
+                <nav class="nav">
+                   <ul>
+                      <li><a href="#" class="active">Domains</a></li>
+                      <li><a href="#">Hosting</a></li>
+                      <li><a href="#">Security</a></li>
+                      <li><a href="#">Email & Marketing</a></li>
+                      <li><a href="#">For Web Professionals</a></li>
+    
+                      <li><a href="">040 67607600</a></li>
+                      <li><a href="">Blog</a></li>
+                      <li><a href="">Help</a></li>
+                      <li><a href="">Sign In</a></li>
+                      <li><a href="">Checkout</a></li>
+                      
+                   </ul>
+                </nav>
+    
+               
+            </div>
+        </div>
+     </header>
      <div class="hero">
         <h1>Bring your business online with a .com </h2>
             <h3>As low as ‪₩12,000‬/1st year.</h3>
@@ -162,6 +192,22 @@
             </div>
           </div>
       </div>
+     <script>
+           const navToggler = document.querySelector(".nav-toggler");
+ navToggler.addEventListener("click", navToggle);
+
+ function navToggle() {
+    navToggler.classList.toggle("active");
+    const nav = document.querySelector(".nav");
+    nav.classList.toggle("open");
+    if(nav.classList.contains("open")){
+    	nav.style.maxHeight = nav.scrollHeight + "px";
+    }
+    else{
+    	nav.removeAttribute("style");
+    }
+ }
+      </script> 
 </body>
 
 </html>
